@@ -95,6 +95,7 @@ body {
   justify-content: space-between;
   align-items: center;
   transition: left 0.8s cubic-bezier(1, 0, 0, 1);
+  z-index: 5;
 }
 
 .navigation-heading {
@@ -303,4 +304,619 @@ body {
   }
 }
 
-/* header*/
+/* end of header*/
+
+/* about us*/
+
+.about-us {
+  margin-left: 8rem;
+  display: flex;
+  background-color: #ddd;
+}
+
+.about-us-content {
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem;
+  box-sizing: border-box;
+}
+
+.about-us-heading {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 4rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.small-underline {
+  width: 9rem;
+  height: 0.1rem;
+  margin: 0 auto 1rem auto;
+  background-color: #b85d1c;
+}
+
+.big-underline {
+  width: 20rem;
+  height: 0.1rem;
+  background-color: #b85d1c;
+}
+
+.sub-heading {
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  color: #b85d1c;
+}
+
+.about-us-paragraph {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.about-us-btn {
+  width: 15rem;
+  padding: 0.7rem 0.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  outline: none;
+  text-transform: uppercase;
+  color: #b85d1c;
+  background-color: transparent;
+  border: 0.1rem solid #b85d1c;
+  cursor: pointer;
+}
+
+.btn-arrow {
+  margin-left: 0.5rem;
+  transition: margin-left 0.4s;
+}
+
+.about-us-btn:hover .btn-arrow {
+  margin-left: 1.5rem;
+}
+
+.about-us-images {
+  flex: 1 1;
+  position: relative;
+}
+
+.image {
+  width: 32rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.4rem;
+  border: 0.2rem solid #b85d1c;
+}
+
+.image-1 {
+  transform: translate(-20%, -90%);
+}
+
+.image-2 {
+  transform: translate(-70%, -70%);
+}
+
+.image-3 {
+  transform: translate(-50%, -50%);
+}
+
+.image-4 {
+  transform: translate(-30%, -30%);
+}
+
+/* end of about us*/
+
+/* common header*/
+.common-header {
+  padding: 5rem;
+  text-align: center;
+  color: #b85d1c;
+}
+
+.common-heading {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+}
+
+.small-underline {
+  width: 9rem;
+  height: 0.1rem;
+  margin: 0 auto 1rem auto;
+  background-color: #b85d1c;
+}
+
+.big-underline {
+  width: 20rem;
+  height: 0.1rem;
+  margin: auto;
+  background-color: #b85d1c;
+}
+
+/* end of common header*/
+
+/* rooms*/
+.rooms {
+  margin-left: 8rem;
+}
+
+.rooms-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.room-card {
+  width: 50rem;
+  margin: 5rem;
+  background-color: #15141b;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+}
+
+.room-image {
+  width: 100%; //inherits de 60rem of parent container room-card
+}
+
+.room-card-content {
+  color: #ddd;
+  padding: 2rem;
+}
+
+.room-card-heading {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.room-card-paragraph {
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.room-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.room-price {
+  font-size: 5rem;
+  font-weight: 300;
+  text-align: right;
+  margin: 0;
+}
+
+.room-card-btn {
+  width: 15rem;
+  padding: 1.5rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  color: #b85d1c;
+  background-color: transparent;
+  border: 0.1rem solid #b85d1c;
+  cursor: pointer;
+}
+
+.rooms-btn-wrapper {
+  text-align: center;
+}
+
+.rooms-btn {
+  width: 20rem;
+  padding: 1.5rem 1rem;
+  margin: 4rem 0;
+  background-color: transparent;
+  outline: none;
+  text-transform: uppercase;
+  color: #b85d1c;
+  border: 0.2rem solid #b85d1c;
+  cursor: pointer;
+  box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.2);
+  transition: all 0.2s;
+}
+
+.rooms-btn:hover {
+  color: #ddd;
+  background-color: #b85d1c;
+}
+
+/* end of rooms*/
+
+/* customer*/
+.customers {
+  margin-left: 8rem;
+  padding-bottom: 7rem;
+  background-color: #15141b;
+}
+
+.customers-paragraph {
+  font-size: 1.8rem;
+  color: #ddd;
+  width: 50%;
+  margin: 2rem auto 8rem auto;
+  text-align: center;
+}
+
+.customers-card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.customer-card {
+  background-color: #eee;
+  width: 50rem;
+  display: flex;
+}
+
+.customer-image-wrapper {
+  margin: auto 0;
+}
+
+.customer-image {
+  width: 20rem;
+  margin-left: -1.5rem;
+}
+
+.customer-info {
+  padding: 0 2rem;
+}
+
+.customer-fullname {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.customer-paragraph-1 {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #b85d1c;
+}
+
+.customer-paragraph-2 {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+/* end of customer*/
+
+/* footer*/
+
+.footer {
+  margin-left: 8rem;
+}
+
+.main-part {
+  display: flex;
+  justify-content: space-between;
+  background-color: #1c1c1c;
+  padding: 4rem;
+}
+
+.footer-heading {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: goldenrod;
+  margin: 1rem 0 3rem 0;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list-item {
+  margin-bottom: 2rem;
+}
+
+.footer-list-link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #bbb;
+}
+
+.contact p {
+  font-size: 1.5rem;
+  color: #bbb;
+  margin-bottom: 4rem;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input {
+  width: 25rem;
+  padding: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8rem;
+  color: #444;
+  outline: none;
+}
+
+.footer-btn {
+  padding: 1rem;
+  background-color: #b85d1c;
+  color: #ddd;
+  border: none;
+}
+
+.gallery {
+  max-width: 45rem;
+}
+
+.image-wrapper {
+  width: 12rem;
+  margin: 0.4rem;
+  overflow: hidden;
+}
+
+.footer-image {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  backface-visibility: hidden;
+}
+
+.gallery-images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-image:hover {
+  transform: scale(1.3);
+  opacity: 0.8;
+}
+
+.creator-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 0 4rem;
+}
+
+.copyright-text {
+  font-size: 1.3rem;
+  color: #aaa;
+}
+
+.text-right {
+  font-size: 1.4rem;
+  color: #bbb;
+}
+
+.text-right i {
+  font-size: 2rem;
+  margin: 0.5rem;
+  color: tomato;
+}
+
+.text-right span {
+  color: gold;
+}
+
+/* end of footer*/
+
+@media (max-width: 1400px) {
+  .customers-card-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .customer-card:first-child {
+    margin-bottom: 3rem;
+  }
+
+  .main-part {
+    flex-direction: column;
+  }
+
+  .footer-list {
+    display: flex;
+  }
+
+  .footer-list-item {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-us {
+    flex-direction: column;
+    padding-bottom: 20rem;
+  }
+
+  .about-us-content {
+    margin-bottom: 13rem;
+  }
+  .image {
+    width: 25rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .banner {
+    text-align: center;
+  }
+
+  .banner-heading {
+    font-size: 4.7rem;
+  }
+
+  .banner-paragraph {
+    font-size: 2.6rem;
+  }
+
+  .banner-button {
+    width: 16rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .customer-card {
+    flex-direction: column;
+    width: 20rem;
+  }
+  .customer-image {
+    margin-left: 0;
+  }
+
+  .footer-list {
+    display: block;
+  }
+
+  .creator-part {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .copyright-text {
+    order: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 5rem;
+  }
+  .navigation {
+    width: 27rem;
+  }
+
+  .header {
+    margin-left: 5rem;
+  }
+
+  .checkbox:checked ~ .navigation {
+    left: 5rem;
+  }
+
+  .navigation-search-input {
+    width: 20rem;
+  }
+
+  .hotel-heading {
+    font-size: 2rem;
+    margin: auto 0;
+  }
+
+  .banner {
+    height: 100%;
+    margin-top: -10rem;
+  }
+
+  .banner-heading {
+    font-size: 3rem;
+  }
+
+  .banner-paragraph {
+    font-size: 2rem;
+  }
+
+  .about-us {
+    padding-bottom: 15rem;
+    margin-left: 5rem;
+  }
+
+  .about-us-heading {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .sub-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-us-content {
+    padding: 5rem;
+  }
+
+  .image {
+    width: 13rem;
+  }
+
+  .rooms {
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+
+  .common-heading {
+    font-size: 2rem;
+  }
+
+  .small-underline {
+    width: 5rem;
+  }
+
+  .big-underline {
+    width: 12rem;
+  }
+
+  .room-card-heading {
+    font-size: 1.5rem;
+  }
+
+  .room-price {
+    font-size: 2.5rem;
+    margin-top: -3rem;
+  }
+
+  .room-card-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .room-card {
+    margin: 2rem;
+  }
+
+  .room-card-btn {
+    margin-top: 2rem;
+    width: 12rem;
+    padding: 1rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  .customers {
+    margin-left: 5rem;
+  }
+
+  .customers-paragraph {
+    font-size: 1.4rem;
+    color: #ddd;
+    width: 80%;
+    margin: 1rem auto 4rem auto;
+    text-align: center;
+  }
+
+  .footer {
+    margin-left: 5rem;
+  }
+
+  .main-part {
+    padding: 2rem;
+  }
+
+  .footer-input {
+    width: 12rem;
+  }
+
+  .image-wrapper {
+    width: 10.5rem;
+  }
+}
